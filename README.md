@@ -18,8 +18,8 @@ Pre-launch waitlist landing page for **SportStack** — the athlete performance 
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/sportstack-waitlist.git
-cd sportstack-waitlist
+git clone https://github.com/YOUR_USERNAME/athleteshare-waitlist.git
+cd athleteshare-waitlist
 
 # 2. Install dependencies
 npm install
@@ -99,7 +99,7 @@ The waitlist currently stores signups in a Node.js in-memory array (resets on se
 ## Repo Structure
 
 ```
-sportstack-waitlist/
+athleteshare-waitlist/
 ├── .github/
 │   └── workflows/
 │       ├── ci.yml          # Lint + type-check + build on every PR

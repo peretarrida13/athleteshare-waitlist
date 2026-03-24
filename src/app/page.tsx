@@ -7,7 +7,7 @@ import Ticker from '@/components/Ticker'
 import MarketTable from '@/components/MarketTable'
 
 export const metadata: Metadata = {
-  title: 'SportStack — Trade Athlete Performance',
+  title: 'AthleteShare — Trade Athlete Performance',
   description:
     'The first EU-regulated platform where your sports knowledge earns real money. Buy and sell shares in top athletes. Join the waitlist for early beta access.',
 }
@@ -29,7 +29,7 @@ const FAQ_ITEMS = [
   {
     question: 'Is this gambling?',
     answer:
-      'No. SportStack is a regulated financial trading platform where shares are priced by verified athlete performance data. You buy and sell shares like a stock market — not bets. We are pursuing a full EU financial licence with passporting rights across all 27 member states.',
+      'No. AthleteShare is a regulated financial trading platform where shares are priced by verified athlete performance data. You buy and sell shares like a stock market — not bets. We are pursuing a full EU financial licence with passporting rights across all 27 member states.',
   },
   {
     question: 'Do I need money to join the beta?',
@@ -121,7 +121,7 @@ export default async function Home() {
               <span className="text-gradient">NOW PROFIT.</span>
             </h1>
             <p className="text-white/50 text-base leading-relaxed mb-8 max-w-md">
-              SportStack is the first EU-regulated platform where your sports knowledge earns
+              AthleteShare is the first EU-regulated platform where your sports knowledge earns
               real money. Buy shares in athletes, sell at peak performance, and build a portfolio
               that actually rewards expertise.
             </p>
@@ -391,16 +391,16 @@ export default async function Home() {
               >
                 SPORTSTACK
               </span>
-              <p className="text-[11px] font-mono text-white/25">© {new Date().getFullYear()} SportStack OÜ · Registered in Estonia</p>
+              <p className="text-[11px] font-mono text-white/25">© {new Date().getFullYear()} AthleteShare OÜ · Registered in Estonia</p>
             </div>
             <div className="flex items-center gap-6 text-[11px] font-mono text-white/30">
-              <a href="mailto:hello@sportstack.trade" className="hover:text-white/60 transition-colors">hello@sportstack.trade</a>
+              <a href="mailto:hello@athleteshare.io" className="hover:text-white/60 transition-colors">hello@athleteshare.io</a>
               <Link href="/privacy" className="hover:text-white/60 transition-colors">Privacy</Link>
               <Link href="/terms" className="hover:text-white/60 transition-colors">Terms</Link>
             </div>
           </div>
           <p className="mt-8 text-[10px] font-mono text-white/15 max-w-2xl leading-relaxed">
-            SportStack is not a licensed financial instrument broker. Trading athlete shares on SportStack is
+            AthleteShare is not a licensed financial instrument broker. Trading athlete shares on AthleteShare is
             entertainment-based and does not constitute investment advice or regulated financial activity.
             Past performance is not indicative of future results. Capital at risk.
           </p>

@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — SportStack',
-  description: 'SportStack privacy policy. Learn how we collect, use, and protect your personal data.',
+  title: 'Privacy Policy — AthleteShare',
+  description: 'AthleteShare privacy policy. Learn how we collect, use, and protect your personal data.',
   robots: { index: true, follow: true },
 }
 
@@ -33,11 +33,11 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-bold text-white mb-3">1. Who We Are</h2>
             <p>
-              SportStack OÜ (&ldquo;SportStack&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;) operates the SportStack platform and waitlist at sportstack.io.
+              AthleteShare OÜ (&ldquo;AthleteShare&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;) operates the AthleteShare platform and waitlist at athleteshare.io.
               We are registered in Estonia and process personal data in accordance with the General Data Protection Regulation (GDPR).
             </p>
             <p className="mt-2">
-              Contact: <a href="mailto:privacy@sportstack.trade" className="text-gold-300 hover:text-gold-200 underline">privacy@sportstack.trade</a>
+              Contact: <a href="mailto:privacy@athleteshare.io" className="text-gold-300 hover:text-gold-200 underline">privacy@athleteshare.io</a>
             </p>
           </section>
 
@@ -105,7 +105,7 @@ export default function PrivacyPage() {
               <li>Lodge a complaint with your supervisory authority</li>
             </ul>
             <p className="mt-3">
-              To exercise any of these rights, email <a href="mailto:privacy@sportstack.trade" className="text-gold-300 hover:text-gold-200 underline">privacy@sportstack.trade</a>.
+              To exercise any of these rights, email <a href="mailto:privacy@athleteshare.io" className="text-gold-300 hover:text-gold-200 underline">privacy@athleteshare.io</a>.
               We will respond within 30 days.
             </p>
           </section>
@@ -129,7 +129,7 @@ export default function PrivacyPage() {
       </main>
 
       <footer className="border-t border-navy-800/50 mt-16 py-8 text-center text-navy-500 text-sm">
-        <p>&copy; {new Date().getFullYear()} SportStack OÜ &mdash; <Link href="/terms" className="hover:text-navy-300 transition-colors">Terms</Link> &middot; <Link href="/privacy" className="hover:text-navy-300 transition-colors">Privacy</Link></p>
+        <p>&copy; {new Date().getFullYear()} AthleteShare OÜ &mdash; <Link href="/terms" className="hover:text-navy-300 transition-colors">Terms</Link> &middot; <Link href="/privacy" className="hover:text-navy-300 transition-colors">Privacy</Link></p>
       </footer>
     </div>
   )

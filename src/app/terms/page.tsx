@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service — SportStack',
-  description: 'SportStack terms of service. Read the terms governing use of the SportStack waitlist and platform.',
+  title: 'Terms of Service — AthleteShare',
+  description: 'AthleteShare terms of service. Read the terms governing use of the AthleteShare waitlist and platform.',
   robots: { index: true, follow: true },
 }
 
@@ -33,21 +33,21 @@ export default function TermsPage() {
           <section>
             <h2 className="text-xl font-bold text-white mb-3">1. Acceptance of Terms</h2>
             <p>
-              By joining the SportStack waitlist or using any SportStack service, you agree to these Terms of Service.
+              By joining the AthleteShare waitlist or using any AthleteShare service, you agree to these Terms of Service.
               If you do not agree, please do not use our services.
               These terms are governed by the laws of the Republic of Estonia.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">2. About SportStack</h2>
+            <h2 className="text-xl font-bold text-white mb-3">2. About AthleteShare</h2>
             <p>
-              SportStack is a sports performance trading platform that allows users to buy and sell shares representing
+              AthleteShare is a sports performance trading platform that allows users to buy and sell shares representing
               athlete performance. The platform is currently in development. The waitlist grants no rights to use the
               live trading platform until beta access is officially granted.
             </p>
             <p className="mt-2 text-gold-300/80 text-sm font-medium">
-              SportStack is not a licensed financial instrument broker. Trading athlete shares on SportStack is
+              AthleteShare is not a licensed financial instrument broker. Trading athlete shares on AthleteShare is
               entertainment-based and does not constitute investment advice or regulated financial activity.
             </p>
           </section>
@@ -65,7 +65,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-xl font-bold text-white mb-3">4. Eligibility</h2>
             <p>
-              You must be at least 18 years old to join the waitlist or use any SportStack service.
+              You must be at least 18 years old to join the waitlist or use any AthleteShare service.
               By signing up you confirm that you meet this age requirement.
             </p>
           </section>
@@ -85,8 +85,8 @@ export default function TermsPage() {
           <section>
             <h2 className="text-xl font-bold text-white mb-3">6. Intellectual Property</h2>
             <p>
-              All content on SportStack — including the name, logo, design, copy, and code — is the property of
-              SportStack OÜ. You may not reproduce, distribute, or create derivative works without our written permission.
+              All content on AthleteShare — including the name, logo, design, copy, and code — is the property of
+              AthleteShare OÜ. You may not reproduce, distribute, or create derivative works without our written permission.
             </p>
           </section>
 
@@ -102,7 +102,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-xl font-bold text-white mb-3">8. Limitation of Liability</h2>
             <p>
-              To the maximum extent permitted by law, SportStack OÜ shall not be liable for any indirect, incidental,
+              To the maximum extent permitted by law, AthleteShare OÜ shall not be liable for any indirect, incidental,
               special, or consequential damages arising from your use of — or inability to use — our services.
             </p>
           </section>
@@ -119,8 +119,8 @@ export default function TermsPage() {
             <h2 className="text-xl font-bold text-white mb-3">10. Contact</h2>
             <p>
               For questions about these terms, contact us at{' '}
-              <a href="mailto:legal@sportstack.trade" className="text-gold-300 hover:text-gold-200 underline">
-                legal@sportstack.trade
+              <a href="mailto:legal@athleteshare.io" className="text-gold-300 hover:text-gold-200 underline">
+                legal@athleteshare.io
               </a>.
             </p>
           </section>
@@ -129,7 +129,7 @@ export default function TermsPage() {
       </main>
 
       <footer className="border-t border-navy-800/50 mt-16 py-8 text-center text-navy-500 text-sm">
-        <p>&copy; {new Date().getFullYear()} SportStack OÜ &mdash; <Link href="/terms" className="hover:text-navy-300 transition-colors">Terms</Link> &middot; <Link href="/privacy" className="hover:text-navy-300 transition-colors">Privacy</Link></p>
+        <p>&copy; {new Date().getFullYear()} AthleteShare OÜ &mdash; <Link href="/terms" className="hover:text-navy-300 transition-colors">Terms</Link> &middot; <Link href="/privacy" className="hover:text-navy-300 transition-colors">Privacy</Link></p>
       </footer>
     </div>
   )

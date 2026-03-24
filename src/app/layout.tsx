@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'SportStack — Trade Athlete Shares | EU Regulated',
+  title: 'AthleteShare — Trade Athlete Shares | EU Regulated',
   description:
     'Buy and sell shares in footballers and basketball players. Prices move in real-time based on match stats. Join the waitlist for early beta access.',
   keywords: [
@@ -13,23 +13,23 @@ export const metadata: Metadata = {
     'sports finance',
     'EU regulated sports platform',
     'athlete market',
-    'SportStack',
+    'AthleteShare',
   ],
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_APP_URL || 'https://sportstack.io',
+    canonical: process.env.NEXT_PUBLIC_APP_URL || 'https://athleteshare.io',
   },
   openGraph: {
-    title: 'SportStack — Trade Athlete Shares | EU Regulated',
+    title: 'AthleteShare — Trade Athlete Shares | EU Regulated',
     description:
       'Buy and sell shares in footballers and basketball players. Prices update after every match. Join the waitlist.',
-    url: process.env.NEXT_PUBLIC_APP_URL || 'https://sportstack.io',
-    siteName: 'SportStack',
+    url: process.env.NEXT_PUBLIC_APP_URL || 'https://athleteshare.io',
+    siteName: 'AthleteShare',
     images: [
       {
-        url: 'https://sportstack.io/og-image.png',
+        url: 'https://athleteshare.io/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'SportStack — Athlete Performance Trading',
+        alt: 'AthleteShare — Athlete Performance Trading',
       },
     ],
     locale: 'en_US',
@@ -37,11 +37,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SportStack — Trade Athlete Shares | EU Regulated',
+    title: 'AthleteShare — Trade Athlete Shares | EU Regulated',
     description:
       'Buy and sell shares in footballers and basketball players. Prices update after every match. Join the waitlist.',
-    images: ['https://sportstack.io/og-image.png'],
-    creator: '@SportStackHQ',
+    images: ['https://athleteshare.io/og-image.png'],
+    creator: '@AthleteShareHQ',
   },
   robots: {
     index: true,
