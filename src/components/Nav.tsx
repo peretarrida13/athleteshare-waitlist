@@ -18,7 +18,7 @@ export default function Nav() {
           className="text-lg font-black tracking-widest text-white"
           style={{ fontFamily: 'var(--font-display)', letterSpacing: '0.12em' }}
         >
-          SPORTSTACK
+          ATHLETESHARE
         </span>
         <div className="flex items-center gap-6">
           {NAV_LINKS.map(({ label, id }) => (

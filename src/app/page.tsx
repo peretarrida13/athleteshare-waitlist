@@ -389,7 +389,7 @@ export default async function Home() {
                 className="text-lg font-black tracking-widest text-white block mb-1"
                 style={{ fontFamily: 'var(--font-display)', letterSpacing: '0.12em' }}
               >
-                SPORTSTACK
+                ATHLETESHARE
               </span>
               <p className="text-[11px] font-mono text-white/25">© {new Date().getFullYear()} AthleteShare OÜ · Registered in Estonia</p>
             </div>
