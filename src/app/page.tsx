@@ -398,9 +398,9 @@ export default async function Home() {
             </div>
           </div>
           <p className="mt-8 text-[10px] font-mono text-white/15 max-w-2xl leading-relaxed">
-            AthleteShare is not a licensed financial instrument broker. Trading athlete shares on AthleteShare is
-            entertainment-based and does not constitute investment advice or regulated financial activity.
-            Past performance is not indicative of future results. Capital at risk.
+            AthleteShare is pursuing a EU Game of Skill licence and is currently operating in demo mode only.
+            This platform does not constitute investment advice or regulated financial activity.
+            Past performance is not indicative of future results.
           </p>
         </div>
       </footer>

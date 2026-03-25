@@ -34,11 +34,11 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-bold text-white mb-3">1. Who We Are</h2>
             <p>
-              AthleteShare OÜ (&ldquo;AthleteShare&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;) operates the AthleteShare platform and waitlist at athleteshare.io.
+              AthleteShare OÜ (&ldquo;AthleteShare&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;) operates the AthleteShare platform and waitlist at athleteshare.app.
               We are registered in Estonia and process personal data in accordance with the General Data Protection Regulation (GDPR).
             </p>
             <p className="mt-2">
-              Contact: <a href="mailto:privacy@athleteshare.io" className="text-gold-300 hover:text-gold-200 underline">privacy@athleteshare.io</a>
+              Contact: <a href="mailto:privacy@athleteshare.app" className="text-gold-300 hover:text-gold-200 underline">privacy@athleteshare.app</a>
             </p>
           </section>
 
@@ -106,7 +106,7 @@ export default function PrivacyPage() {
               <li>Lodge a complaint with your supervisory authority</li>
             </ul>
             <p className="mt-3">
-              To exercise any of these rights, email <a href="mailto:privacy@athleteshare.io" className="text-gold-300 hover:text-gold-200 underline">privacy@athleteshare.io</a>.
+              To exercise any of these rights, email <a href="mailto:privacy@athleteshare.app" className="text-gold-300 hover:text-gold-200 underline">privacy@athleteshare.app</a>.
               We will respond within 30 days.
             </p>
           </section>

@@ -130,7 +130,7 @@ export default function WaitlistForm({ variant, queueCount }: WaitlistFormProps)
         </div>
 
         <p className="mt-2 text-xs font-medium" style={{ color: 'rgba(255,255,255,0.5)' }}>
-          Join {displayBase.toLocaleString()}+ fans already waiting
+          {displayBase > 0 ? `Join ${displayBase.toLocaleString()}+ fans already waiting` : 'Be among the first to get access'}
         </p>
       </div>
     )
@@ -197,9 +197,11 @@ export default function WaitlistForm({ variant, queueCount }: WaitlistFormProps)
       >
         {loading ? 'Joining...' : 'Secure My Spot →'}
       </button>
-      <p className="text-xs font-mono text-center" style={{ color: 'rgba(212, 160, 23, 0.6)' }}>
-        ⚡ {displayBase.toLocaleString()} people ahead of you — join now
-      </p>
+      {displayBase > 0 && (
+        <p className="text-xs font-mono text-center" style={{ color: 'rgba(212, 160, 23, 0.6)' }}>
+          ⚡ {displayBase.toLocaleString()} people ahead of you — join now
+        </p>
+      )}
       <p className="text-xs text-center" style={{ color: 'rgba(255,255,255,0.25)' }}>
         No spam. No payment. Unsubscribe anytime.
       </p>
