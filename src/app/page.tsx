@@ -68,7 +68,7 @@ export default async function Home() {
       <Ticker />
 
       {/* ── HERO ─────────────────────────────────────────────────────── */}
-      <section className="relative min-h-[92vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[100svh] lg:min-h-[92vh] flex items-center overflow-hidden">
         {/* Background stadium photo */}
         <div
           className="absolute inset-0 z-0"
@@ -89,7 +89,7 @@ export default async function Home() {
         />
 
         {/* Content */}
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-8 w-full pt-10 pb-24">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-8 w-full pt-8 pb-16 lg:pt-10 lg:pb-24">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left — copy */}
             <div>
@@ -285,7 +285,7 @@ export default async function Home() {
         />
         <div className="relative z-10 h-full flex items-center justify-center">
           <p
-            className="text-5xl sm:text-7xl text-white/90 text-center leading-none px-4"
+            className="text-3xl sm:text-5xl lg:text-7xl text-white/90 text-center leading-none px-4"
             style={{ fontFamily: 'var(--font-display)', textShadow: '0 4px 40px rgba(0,0,0,0.8)' }}
           >
             YOUR KNOWLEDGE.<br />

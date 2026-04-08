@@ -137,6 +137,45 @@ function PhoneSlide({
   )
 }
 
+function MobileSlides() {
+  return (
+    <section className="lg:hidden py-16 px-4 sm:px-8 max-w-6xl mx-auto space-y-20">
+      {SLIDES.map((slide) => (
+        <div key={slide.tag} className="flex flex-col items-center gap-8">
+          <div style={{ position: 'relative' }}>
+            <div style={{
+              position: 'absolute', inset: -16,
+              background: 'radial-gradient(ellipse, rgba(212,160,23,0.12) 0%, transparent 70%)',
+              filter: 'blur(16px)',
+            }} />
+            <img
+              src={slide.screenshot}
+              alt="App screenshot"
+              style={{
+                height: 480,
+                width: 'auto',
+                display: 'block',
+                filter: 'drop-shadow(0 24px 48px rgba(0,0,0,0.8))',
+                position: 'relative',
+                zIndex: 1,
+              }}
+            />
+          </div>
+          <div className="text-center">
+            <p className="text-xs font-mono uppercase tracking-widest mb-3" style={{ color: 'var(--gold)' }}>
+              {slide.tag}
+            </p>
+            <h3 className="text-3xl text-white leading-none mb-3" style={{ fontFamily: 'var(--font-display)' }}>
+              {slide.title}
+            </h3>
+            <p className="text-white/40 text-sm leading-relaxed max-w-xs mx-auto">{slide.sub}</p>
+          </div>
+        </div>
+      ))}
+    </section>
+  )
+}
+
 export default function StickyPhoneSection() {
   const containerRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
@@ -147,54 +186,58 @@ export default function StickyPhoneSection() {
   const phoneY = useTransform(scrollYProgress, [0, 1], [0, -30])
 
   return (
-    <section
-      ref={containerRef}
-      style={{ position: 'relative', minHeight: `${SLIDES.length * 100}vh` }}
-    >
-      <div
-        style={{
-          position: 'sticky',
-          top: 0,
-          height: '100vh',
-          display: 'flex',
-          alignItems: 'center',
-        }}
+    <>
+      {/* Mobile: flat stacked cards */}
+      <MobileSlides />
+
+      {/* Desktop: sticky scroll */}
+      <section
+        ref={containerRef}
+        className="hidden lg:block"
+        style={{ position: 'relative', minHeight: `${SLIDES.length * 100}vh` }}
       >
-        <div className="max-w-6xl mx-auto px-4 sm:px-8 w-full">
-          <div style={{ display: 'flex', alignItems: 'center', gap: 60 }}>
+        <div
+          style={{
+            position: 'sticky',
+            top: 0,
+            height: '100vh',
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
+          <div className="max-w-6xl mx-auto px-4 sm:px-8 w-full">
+            <div style={{ display: 'flex', alignItems: 'center', gap: 60 }}>
 
-            {/* Phone stack — desktop only */}
-            <motion.div
-              style={{ y: phoneY, flexShrink: 0, position: 'relative', width: 398, height: 860 }}
-              className="hidden lg:block"
-            >
-              {SLIDES.map((slide, i) => (
-                <PhoneSlide
-                  key={slide.tag}
-                  slide={slide}
-                  index={i}
-                  total={SLIDES.length}
-                  scrollYProgress={scrollYProgress}
-                />
-              ))}
-            </motion.div>
+              <motion.div
+                style={{ y: phoneY, flexShrink: 0, position: 'relative', width: 398, height: 860 }}
+              >
+                {SLIDES.map((slide, i) => (
+                  <PhoneSlide
+                    key={slide.tag}
+                    slide={slide}
+                    index={i}
+                    total={SLIDES.length}
+                    scrollYProgress={scrollYProgress}
+                  />
+                ))}
+              </motion.div>
 
-            {/* Feature text stack */}
-            <div style={{ flex: 1, position: 'relative', height: 260 }}>
-              {SLIDES.map((slide, i) => (
-                <FeatureSlide
-                  key={slide.tag}
-                  slide={slide}
-                  index={i}
-                  total={SLIDES.length}
-                  scrollYProgress={scrollYProgress}
-                />
-              ))}
+              <div style={{ flex: 1, position: 'relative', height: 260 }}>
+                {SLIDES.map((slide, i) => (
+                  <FeatureSlide
+                    key={slide.tag}
+                    slide={slide}
+                    index={i}
+                    total={SLIDES.length}
+                    scrollYProgress={scrollYProgress}
+                  />
+                ))}
+              </div>
+
             </div>
-
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }

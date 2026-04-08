@@ -56,9 +56,9 @@ export default function WaitlistForm({ variant, queueCount }: WaitlistFormProps)
     const displayPosition = position.toLocaleString()
     return (
       <div className="py-2">
-        <div className="text-5xl mb-4">🏆</div>
+        <div className="text-4xl mb-4">🏆</div>
         <p
-          className="text-5xl text-gradient mb-2 leading-none"
+          className="text-3xl sm:text-5xl text-gradient mb-2 leading-none"
           style={{ fontFamily: 'var(--font-display)' }}
         >
           YOU&apos;RE #{displayPosition} IN LINE
@@ -157,13 +157,13 @@ export default function WaitlistForm({ variant, queueCount }: WaitlistFormProps)
         className="w-full px-4 py-2.5 rounded-lg text-sm text-white placeholder-slate-600 focus:outline-none transition-colors"
         style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}
       />
-      <div className="flex gap-2">
+      <div className="grid grid-cols-3 gap-2">
         {(['Football', 'Basketball', 'Both'] as Sport[]).map((s) => (
           <button
             key={s}
             type="button"
             onClick={() => setSport(s)}
-            className="flex-1 py-2 rounded-lg text-xs font-medium transition-colors"
+            className="py-2 rounded-lg text-xs font-medium transition-colors truncate"
             style={
               sport === s
                 ? { background: 'var(--gold-light)', color: '#07090F' }
