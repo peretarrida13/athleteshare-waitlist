@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { ensureTable, query } from '@/lib/db'
 import AdminLogout from './AdminLogout'
 
