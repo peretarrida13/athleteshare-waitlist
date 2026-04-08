@@ -44,7 +44,7 @@ function mapApiToLocal(a: ApiAthlete): Athlete {
     id: a.id,
     name: a.shortName || a.name,
     club: a.team,
-    sport: (a.sport === 'BASKETBALL' ? 'BASKETBALL' : 'FOOTBALL') as Sport,
+    sport: (a.sport === 'BASKETBALL' ? 'BASKETBALL' : 'FOOTBALL') as 'FOOTBALL' | 'BASKETBALL',
     league: a.league,
     price,
     change,
