@@ -504,9 +504,9 @@ export default async function Home() {
               <a href="mailto:hello@athleteshare.app" className="hover:text-white/60 transition-colors">hello@athleteshare.app</a>
               <Link href="/privacy" className="hover:text-white/60 transition-colors">Privacy</Link>
               <Link href="/terms" className="hover:text-white/60 transition-colors">Terms</Link>
-              <a href="https://twitter.com/athleteshare" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 transition-colors">Twitter / X</a>
-              <a href="https://instagram.com/athleteshare" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 transition-colors">Instagram</a>
-              <a href="https://tiktok.com/@athleteshare" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 transition-colors">TikTok</a>
+              <a href="https://x.com/athleteshareapp" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 transition-colors">Twitter / X</a>
+              <a href="https://www.tiktok.com/@athleteshare" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 transition-colors">TikTok</a>
+              <a href="https://www.instagram.com/athleteshare.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 transition-colors">Instagram</a>
             </div>
           </div>
           <p className="mt-8 text-[10px] font-mono text-white/15 max-w-2xl leading-relaxed">
