@@ -4,7 +4,23 @@ import { getAdminStats } from '@/lib/api'
 import AdminLogout from './AdminLogout'
 
 export default async function AdminDashboard() {
-  const { total, sports, countries, daily, recent, otherSports } = await getAdminStats()
+  let stats: Awaited<ReturnType<typeof getAdminStats>>
+  try {
+    stats = await getAdminStats()
+  } catch (e) {
+    return (
+      <main style={{ background: '#050D18', minHeight: '100vh', padding: 40, color: '#fff', fontFamily: 'monospace' }}>
+        <h1 style={{ color: '#D4A017' }}>Dashboard error</h1>
+        <pre style={{ color: '#f87171', whiteSpace: 'pre-wrap', marginTop: 16 }}>
+          {e instanceof Error ? e.message : String(e)}
+        </pre>
+        <p style={{ marginTop: 16, color: 'rgba(255,255,255,0.4)', fontSize: 13 }}>
+          API_URL: {process.env.API_URL ?? '(not set)'}
+        </p>
+      </main>
+    )
+  }
+  const { total, sports, countries, daily, recent, otherSports } = stats
 
   const maxDay = Math.max(...daily.map(d => d.count), 1)
 
